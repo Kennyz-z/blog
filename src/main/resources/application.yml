@@ -7,4 +7,11 @@ spring:
     password: 981216
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml
+blog:
+  jwt:
+    #加密密钥
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+    #token有效时常，7天
+    expire: 604800
+    header: Authorization
 

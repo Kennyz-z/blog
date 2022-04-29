@@ -41,6 +41,10 @@ public class Result {
         return res;
     }
 
+    public static Result success(Object data){
+        return success(200,"success", data);
+    }
+
     public static Result error(String msg, Object data) {
         return error(400, msg, data);
     }
